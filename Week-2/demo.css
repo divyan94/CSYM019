@@ -1,0 +1,30 @@
+
+/* Direct Descendant*/
+.myform > input {
+ border-radius: 20px;
+ border: 3px solid #666;
+ box-shadow: 3px 3px 3px #000;
+ margin-bottom: 10px;
+ background-color: darkblue;
+ padding: 10px;
+ text-transform: uppercase;
+ color: white;
+}
+
+p {
+ background-color: purple;
+ color: white;
+ /* Display :inline;*/
+ display: inline;
+ /* Display :block;
+ display: block;*/
+width: 150px;
+float: left;
+/*float: right;*/
+
+}
+
+.p1{
+	background-color: green;
+	overflow: auto;
+}

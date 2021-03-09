@@ -1,0 +1,49 @@
+.part1 h2{
+	color:red;
+}
+.part1 p{
+	color:white;
+	background-color: black;
+}
+.part2 h2{
+color: green;
+}
+.part2 p{
+	color:green;
+	background-color: darkred;
+}
+
+.part3 p{
+color:green;
+}
+
+.part3 div > p{
+color:green;
+}
+
+.part4 p{
+	color:green;
+}
+
+.part4 div > p{
+	color: black;
+}
+
+.csym019 {
+	background-color: purple;
+ color: yellow;
+ display: block;
+width: 50%;
+float: left;
+/*float: right;*/
+}
+
+.csym015
+{
+	background-color: yellow;
+ color: green;
+ display: block;
+width: 50%;
+float: left;
+/*float: right;*/
+}
