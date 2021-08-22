@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 4</title>
+		<link rel="stylesheet" href="style.css" />
+
+		
+		<script type="text/javascript">
+			function myClickEvent() {
+ var element = document.getElementById('circle');
+ element.style.opacity = 1;
+}
+function myLoadEvent() {
+ var element = document.getElementById('circle');
+ element.addEventListener('click', myClickEvent);
+ element.style.opacity = 0.5;
+}
+document.addEventListener('DOMContentLoaded', myLoadEvent);
+		</script>
+	</head>
+	<body>
+
+	<div id="circle">
+		Click Me
+	</div>
+
+	</body>
+</html>

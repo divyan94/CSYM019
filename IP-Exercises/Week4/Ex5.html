@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Page!</title>
+	<script type="text/javascript">
+		function myClickFunction() {
+			var element = document.getElementById('pageheading');
+			element.firstChild.nodeValue = 'Breaking News!!!!!!!!';
+			var element = document.getElementById('paragraph');
+			element.firstChild.nodeValue = 'No Exams from Tomorrow';
+		}
+		function myLoadFunction() {
+			var element = document.getElementById('pageheading');
+			element.addEventListener('click', myClickFunction);
+		}
+		document.addEventListener('DOMContentLoaded', myLoadFunction);
+	</script>
+</head>
+<body>
+	<h1 id="pageheading">Page heading</h1>
+	<p id="paragraph">Page content</p>
+</body>
+</html>

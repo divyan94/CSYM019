@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<link rel="stylesheet" href="style.css" />
+
+		
+		<script type="text/javascript">
+			function myClickEvent() {
+ var element = document.getElementById('circle');
+ element.style.backgroundColor = 'blue';
+}
+function myLoadEvent() {
+ var element = document.getElementById('circle');
+ element.addEventListener('click', myClickEvent);
+}
+document.addEventListener('DOMContentLoaded', myLoadEvent);
+		</script>
+	</head>
+	<body>
+
+	<div id="circle">
+		Click Me
+	</div>
+
+	</body>
+</html>

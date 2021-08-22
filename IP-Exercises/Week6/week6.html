@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Working with Json</title>
+	<script type="text/javascript">
+		var myVar = {
+				"bandName" : "BTS",
+				"locationName": "South Korea",
+				"agencyName" : "Big Hit Production",
+				"industryName" : "Music"
+		}
+		//alert(myVar.bandName);
+		//alert(myVar.locationName);
+		var myVar2 = {
+				"songName" : "Idol",
+				"Positions": {
+					"singerName" : "JK",
+					"rapperName": "RM",
+					"dancerName":"V"
+				}
+		}
+		//alert(myVar2.Positions.singerName);
+		//alert(myVar2.Positions.rapperName);
+		var btsMem = ["Kim Namjoon", "Kim Seokjin","Min Yoongi","Jung Hoseok","Kim Taehyung","Park Jimin","Jeon Jungkook"];
+		//alert(btsMem[3]); 
+
+		var myBTS = [
+		{
+			"name": "Kim Namjoon",
+			"dob" : 1994
+		},
+		{ 
+
+		"name": "Kim Seokjin",
+			"dob" : 1992
+		},	
+		{
+
+			"name": "Min Yoongi",
+			"dob" : 1993
+		},
+		];
+
+		alert(myBTS[0].dob);
+		alert(myBTS[2].name + " " + " born in " + " " + myBTS[2].dob);
+
+
+		var bts2 = {
+			"name" : "BTS",
+			"concertLocations" : [
+
+			{
+				"locationName" : "Chicago",
+				"year" : 2017	
+			},
+			{
+				"locationName" : "Wembley",
+				"year" : 2018	
+			},
+
+			{
+				"locationName" : "Japan",
+				"year" : 2016	
+			}
+			]
+		};
+
+		alert(bts2.concertLocations[2].locationName + " BTS conert  held in  " + bts2.concertLocations[2].year);
+
+	</script>
+</head>
+<body>
+<p> Helloo</p>
+<h2> All about BTS</h2>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ajax Using XMLHTTPRequest</title>
+</head>
+<body>
+	<h1> Making an Ajax Requesting Using XMLHTTPRequest (XHR Object)</h1>
+	<br>
+	<h2>British Countries</h2>
+	<section>
+		<table id="countylist">
+		<br>
+		<br>
+		<div id="updatemessage"></div> 
+	</section>
+</body>
+<script type="text/javascript">
+
+	$.ajax(
+	{
+		url : "ajaxJson.json",
+		type : "GET",
+		dataType : "json",
+		success: function(response) {
+			// body...
+			let temp = "";
+			$.each(response.counties, function(i){
+
+				temp += "<tr><td> " + response.counties[i].name + " </td></tr>";
+
+
+			});
+			$("#countylist").append(temp);
+		},
+		error: function()
+		{
+			//display errors
+		}
+
+	});
+</script>
+</html>

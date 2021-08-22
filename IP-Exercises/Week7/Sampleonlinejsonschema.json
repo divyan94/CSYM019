@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "hobbies": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "friendsList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "firstName": {
+                      "type": "string"
+                    },
+                    "lastName": {
+                      "type": "string"
+                    },
+                    "age": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "firstName",
+                    "lastName",
+                    "age"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "age",
+            "hobbies",
+            "friendsList"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "age"
+          ]
+        }
+      ]
+    },
+    "subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "moduleName": {
+              "type": "string"
+            },
+            "study": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "moduleName",
+            "study"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "moduleName": {
+              "type": "string"
+            },
+            "study": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "moduleName",
+            "study"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "users",
+    "subjects"
+  ]
+}

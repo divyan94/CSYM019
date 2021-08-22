@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>My Web Page!</title>
+<script type="text/javascript">
+	function myLoadFunction()
+	 {
+ 		var element = document.getElementById('pageheading');
+ 		element.firstChild.nodeValue = 'New Heading';
+ 		var pe =  document.getElementById('p1');
+ 		pe.firstChild.nodeValue = "Updated Page Content By Click- Hey Whatsup!!"
+ 	}
+		
+	document.addEventListener('click', myLoadFunction);
+</script>
+ </head>
+ <body>
+ <h1 id="pageheading">Page heading</h1>
+ <p id="p1">Page content</p>
+ </body>
+</html>

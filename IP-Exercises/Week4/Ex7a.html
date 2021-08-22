@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>My Web Page!</title>
+ <script type="text/javascript">
+ 	function clickFunction() {
+ 		var element = document.getElementById('myinput');
+ 		alert(element.value);
+ 	}
+ 	function myLoadFunction() {
+ 		var element = document.getElementById('mybutton');
+ 		element.addEventListener('click', clickFunction);
+ 	}
+ 	document.addEventListener('DOMContentLoaded', myLoadFunction);
+
+
+ </script>
+ </head>
+ <body>
+ <input type="text" id="myinput" />
+ <input type="button" id="mybutton" value="click me" />
+ </body>
+</html>

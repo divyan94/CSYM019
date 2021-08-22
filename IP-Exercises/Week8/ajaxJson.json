@@ -1,0 +1,31 @@
+{
+	"counties" : 
+	[ 
+
+ 	{
+ 		"countyID": "1",
+        "e": "357111",
+        "n": "173970",
+        "name": "Avon",
+        "gridId": "1",
+    
+      },
+      {
+        "countyID": "2",
+        "e": "506599",
+        "n": "243811",
+        "name": "Bedfordshire",
+        "gridId": "1",
+        
+      },
+      {
+        "countyID": "3",
+        "e": "467185",
+        "n": "174604",
+        "name": "Berkshire",
+        "gridId": "1",
+      
+      },
+
+	]
+}

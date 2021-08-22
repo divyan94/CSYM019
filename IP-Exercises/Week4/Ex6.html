@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>My Web Page!</title>
+<script type="text/javascript">
+	function updateParagraph() {
+		var element = document.getElementById('paragraph');
+		element.firstChild.nodeValue = 'OMG What The Fish!!!';
+	}
+	function updateH1() {
+		var element = document.getElementById('pageheading');
+		element.firstChild.nodeValue = 'Aliens are Coming To the Earth';
+	}
+	function myLoadFunction() {
+		var element = document.getElementById('pageheading');
+		element.addEventListener('click', updateH1);
+		var element = document.getElementById('paragraph');
+		element.addEventListener('click', updateParagraph);
+	}
+	document.addEventListener('DOMContentLoaded', myLoadFunction);
+</script>
+ </head>
+ <body>
+ <h1 id="pageheading">Page heading</h1>
+ <p id="paragraph">Page content</p>
+ </body>
+</html>

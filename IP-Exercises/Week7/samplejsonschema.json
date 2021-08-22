@@ -1,0 +1,62 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"title" : " Sample Schema",
+	"description" : " Generating Sample Schema from Youtube channel.",
+	"type" : "object",
+	"users": { "type" : "array",
+	   "items" : 
+	   [
+	   	{
+	   	"type" : "object",
+	   	"properties" : 
+	   		{
+	   		"firstName": {"type": "string"},
+	   		"lastName" : {"type" : "string"},
+	   		"age" : {"type" : "integer"},
+	   		"hobbies" : { "type" : "array" ,
+	   		"items" : 
+	   				[
+	   					{ "type" : "string"},
+	   					{"type" : "string"}	
+					]
+			},
+			"friendsList" : { "type" : "array",
+	 					"items" :
+	 						 [ 
+	 							{
+
+							"type" : "object",
+							"properties" : 
+									{
+									"firstName": {"type" :"string"},
+									"lastName" : {"type" : "string"},
+			 						"age" : {"type" : "integer"}
+									}
+								}
+							],
+	
+							}
+		   	}
+
+	   	}
+]
+	   },
+
+"subjects" : {
+	"type" :" array",
+	"items" : [
+		{
+			"type" : "object", "properties" : 
+			{
+				"moduleName" : {"type" : "string"},
+				"study" : {"type": "string"},
+
+			}
+		}
+			]
+}
+
+
+}
+
+}

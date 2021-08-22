@@ -1,0 +1,24 @@
+{
+	"$schema" : "http://json-schema.org/draft-04#schema",
+	"title" : "Making Sample Ajax Server Request",
+	"description" : "Making an ajax Server Request using UK Counties",
+	"type" : "object",
+	"countiesName" : {
+		"type" : "array", "items" : [
+					{
+						"type" : "object",
+						"properties" : 
+						{
+							"countyID" : {"type" : "integer"},
+							"e" : {"type" : "integer"},
+							"n" : {"type" : "integer"},
+							"name" : {"type": "integer"},
+							
+						}
+
+					}
+		]
+
+	}
+
+}

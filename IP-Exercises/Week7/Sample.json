@@ -1,0 +1,38 @@
+{
+	"users" : [
+
+				{
+				"firstName" : "Divya",
+				"lastName" : "Kumar",
+				"age" : 27,
+				"hobbies" : ["Listening Music", "Watching Drama"],
+				"friendsList" : 
+				[
+				 {
+					"firstName" : "Laasya",
+					"lastName" : "Gullapalli",
+					"age" : 27,
+				}
+			]
+		
+			},
+			{
+				"firstName" : "Laasya",
+				"lastName" : "Gullapalli",
+				"age" : 27
+			}	
+		],
+	"subjects" : [
+
+		{
+			"moduleName" : " Pschiatry",
+			"study" :  "2" 
+		},
+		{
+			"moduleName" : "Psychology",
+			"study" : "3"
+		}]
+
+
+
+}
